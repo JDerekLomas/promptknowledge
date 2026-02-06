@@ -2,6 +2,8 @@
 
 Extract and visualize your Claude Code conversation history.
 
+**New to Claude Code?** Start with [GETTING-STARTED.md](./GETTING-STARTED.md) - a guide to setting up Claude Code properly (beyond just installation).
+
 ## What is this?
 
 When you use [Claude Code](https://claude.com/claude-code), your conversations are saved in `~/.claude/projects/` as JSONL files. This tool extracts the prompts you've written—the raw material of building with AI.
@@ -55,6 +57,18 @@ See [Prompt Archaeology](https://dereklomas.me/projects/promptarchaeology/) for 
 - Only extracts your own local conversation history
 - Automatically redacts patterns matching API keys
 - No data is sent anywhere—everything runs locally
+
+## The Stack Behind This
+
+This project emerged from 68 days of building with Claude Code. Here's what that stack looks like:
+
+**Deployment**: Vercel, GitHub, Hetzner VPS
+**AI Services**: Anthropic, Google Gemini, MuleRouter, ElevenLabs
+**Frontend**: Next.js, D3.js, React Three Fiber
+**Secrets**: [secret-lover](https://github.com/dereklomas/secret-lover) (macOS Keychain + Touch ID)
+**Workflow**: Terse prompts, rapid iteration, 36-second avg project switching
+
+See [GETTING-STARTED.md](./GETTING-STARTED.md) for how to replicate this setup.
 
 ## License
 
